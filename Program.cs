@@ -1,5 +1,10 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using lab4_solid.DAL;
+using lab4_solid.Entities;
+using lab4_solid.Migrations;
+using lab4_solid.Models;
+using Microsoft.Extensions.Configuration;
 using System;
+using System.Data.Entity;
 
 namespace lab4_solid
 {
@@ -7,11 +12,7 @@ namespace lab4_solid
     {
         static void Main(string[] args)
         {
-
-            IConfigurationBuilder builder = new ConfigurationBuilder().AddJsonFile("appsettings.json", false, true);
-            IConfigurationRoot root = builder.Build();
-
-            Console.WriteLine("Hello, world!");
+            Database.SetInitializer(new SchoolInitializer());
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using lab4_solid.Entities;
+using lab4_solid.Migrations;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;

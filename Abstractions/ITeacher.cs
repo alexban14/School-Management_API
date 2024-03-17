@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using lab4_solid.Entities;
 
-namespace lab4_solid
+namespace lab4_solid.Abstractions
 {
     internal interface ITeacher
     {

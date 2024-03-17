@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab4_solid
+namespace lab4_solid.Entities
 {
     internal class Person
     {
