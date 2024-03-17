@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 
 namespace lab4_solid
 {
@@ -6,7 +7,10 @@ namespace lab4_solid
     {
         static void Main(string[] args)
         {
-            // Your program logic goes here
+
+            IConfigurationBuilder builder = new ConfigurationBuilder().AddJsonFile("appsettings.json", false, true);
+            IConfigurationRoot root = builder.Build();
+
             Console.WriteLine("Hello, world!");
         }
     }
